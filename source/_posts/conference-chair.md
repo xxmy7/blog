@@ -6,6 +6,8 @@ tags:
     - 论文
 categories: 
     - 投稿
+summary: 计算机会议中各个chair的介绍
+img: /images/default_cover.png
 ---
 大会主席 general chair：负责统筹学术会议的所有工作。
 

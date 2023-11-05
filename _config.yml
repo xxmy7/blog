@@ -5,7 +5,7 @@
 # Site
 title: Hongbo’s Blog
 subtitle: '保持心脏跳动, 就会有人与你共鸣'
-description: ''
+description: 
 keywords:
 author: Hongbo
 language: zh-CN
@@ -110,7 +110,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: anzhiyu
+theme: hexo-theme-matery
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
