@@ -3,6 +3,11 @@ div.title {
     font-size: 3rem !important; 
 }
 
+h1.friend-name {
+    font-size: 1.5rem !important; 
+}
+
+
 /* Note 一些提示块的样式 */
 .admonition {
     margin: 1.5625em 0;
