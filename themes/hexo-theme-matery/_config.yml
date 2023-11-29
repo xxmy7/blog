@@ -17,8 +17,8 @@ menu:
     url: /about
     icon: fas fa-user-circle
   Talk:
-    url: /artitalk
-    icon: fas fa-comment
+    url: /talk
+    icon: fas fa-star-half-empty
   Contact:
     url: /contact
     icon: fas fa-comments
