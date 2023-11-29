@@ -16,6 +16,9 @@ menu:
   About:
     url: /about
     icon: fas fa-user-circle
+  Talk:
+    url: /artitalk
+    icon: fas fa-comment
   Contact:
     url: /contact
     icon: fas fa-comments
@@ -679,9 +682,9 @@ background:
 
 # 说说 https://artitalk.js.org/
 artitalk:
-  enable: false
-  appId: # xxxxx
-  appKey: # xxxxxx
+  enable: true
+  appId: EzqRpzfsfAWdkYwgeo1hnc01-MdYXbMMI
+  appKey: oBx7p6ay2iC7xF2Du8sjFih2
 
 # 哔哔功能配置
 # 登陆leancloud创建应用。进入应用后，点击创建 Class，将「 Class 名称」命名为 content
