@@ -18,7 +18,7 @@ menu:
     icon: fas fa-user-circle
   Talk:
     url: /talk
-    icon: fas fa-star-half-empty
+    icon: fas fa-pencil
   Contact:
     url: /contact
     icon: fas fa-comments
@@ -685,6 +685,15 @@ artitalk:
   enable: true
   appId: EzqRpzfsfAWdkYwgeo1hnc01-MdYXbMMI
   appKey: oBx7p6ay2iC7xF2Du8sjFih2
+  # lang: zh # 语言设置，zh为汉语，en为英语，es为西班牙语。默认为汉语
+  pageSize: 10 #每页说说的显示数量
+  # shuoPla: #在编辑说说的输入框中的占位符
+  # avatarPla: https://cdn.jsdelivr.net/gh/small-rose/small-rose.github.io/medias/avatar.jpg #自定义头像url的输入框的占位符
+  # motion: #加载动画的开关，1为开，0为关，默认为开
+  # bgImg: #说说输入框背景图片url
+  # color1: linear-gradient(45deg, rgb(109, 208, 242) 15%, rgb(245, 154, 190) 85%)  #说说背景颜色1&按钮颜色1
+  # color2:  linear-gradient(45deg, rgb(109, 208, 242) 15%, rgb(245, 154, 190) 85%)  #说说背景颜色2&按钮颜色2
+  # color3: black #说说字体颜色
 
 # 哔哔功能配置
 # 登陆leancloud创建应用。进入应用后，点击创建 Class，将「 Class 名称」命名为 content

@@ -1,8 +1,92 @@
+<%- partial('_partial/bg-cover') %>
 <script type="text/javascript" src="https://unpkg.com/artitalk"></script>
-<div id="artitalk_main"></div>
-<script>
-    new Artitalk({
-        appId: '<%- theme.artitalk.appId %>',
-        appKey: '<%- theme.artitalk.appKey %>',
-    })
+
+<style type="text/css"> 
+    .cbp_tmtimeline>li:nth-child(odd) .cbp_tmlabel {
+        background: linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)) 0% 0% / cover, url("https://ae01.alicdn.com/kf/H18a4b998752a4ae68b8e85d432a5aef0l.png"), url("https://ae01.alicdn.com/kf/H21b5f6b8496141a1979a33666e1074d9x.jpg") 0px 0px;
+        color: white;
+    }
+    .cbp_tmtimeline>li:nth-child(odd) .cbp_tmlabel:after {
+        border-right-color:  rgba(255, 165, 150, 0.5);
+    }
+    .cbp_tmtimeline>li .cbp_tmlabel {
+        background: linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)) 0% 0% / cover, url("https://ae01.alicdn.com/kf/H18a4b998752a4ae68b8e85d432a5aef0l.png"), url("https://ae01.alicdn.com/kf/H21b5f6b8496141a1979a33666e1074d9x.jpg") 0px 0px;
+        color: white;
+    }
+    .cbp_tmtimeline>li .cbp_tmlabel:after {
+        border-right-color:  rgba(0, 228, 255, 0.35);
+    }
+    .button {
+        background: linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)) 0% 0% / cover, url("https://ae01.alicdn.com/kf/H18a4b998752a4ae68b8e85d432a5aef0l.png"), url("https://ae01.alicdn.com/kf/H21b5f6b8496141a1979a33666e1074d9x.jpg") 0px 0px;
+        color: white;
+    }
+</style>
+
+<article id="articles11" class="container chip-container">
+  <div class="row">
+      <div class=" card">
+        <div class="card-content" >
+          <div class="tag-title center-align">
+                <i class="fas fa-pen-alt"></i> 说说
+           </div>
+          <div id="artitalk_main"></div>
+        </div>  
+      </div>
+  </div>
+</article>
+
+<script> 
+new Artitalk({
+    appId: "<%=  theme.artitalk.appId  %>",
+    appKey: "<%=  theme.artitalk.appKey  %>",
+    <% if (theme.artitalk.serverURL) { %>
+        serverURL: "<%=  theme.artitalk.serverURL  %>",
+    <% } %>
+    <% if (theme.artitalk.lang) { %>
+        lang: "<%=  theme.artitalk.lang  %>",
+    <% } %>
+    <% if (theme.artitalk.pageSize) { %>
+        pageSize: "<%=  theme.artitalk.pageSize  %>",
+    <% } %>
+    <% if (theme.artitalk.shuoPla) { %>
+        shuoPla: "<%=  theme.artitalk.shuoPla  %>",
+    <% } %>
+    <% if (theme.artitalk.avatarPla) { %>
+        avatarPla: "<%=  theme.artitalk.avatarPla  %>",
+    <% } %>
+    <% if (theme.artitalk.motion == 0) { %>
+        motion: 0,
+    <% } else { %>
+        motion: 1,
+    <% }  %>
+    <% if (theme.artitalk.bgImg) { %>
+        bgImg: "<%=  theme.artitalk.bgImg  %>",
+    <% } %>
+    <% if (theme.artitalk.color1) { %>
+        color1: "<%=  theme.artitalk.color1  %>",
+    <% } %>
+    <% if (theme.artitalk.color2) { %>
+        color2: "<%=  theme.artitalk.color2  %>",
+    <% } %>
+    <% if (theme.artitalk.color3) { %>
+        color3: "<%=  theme.artitalk.color3  %>",
+    <% } %>
+    <% if (theme.artitalk.cssUrl) { %>
+        cssUrl: "<%=  theme.artitalk.cssUrl  %>",
+    <% } %>
+    atEmoji: {
+        baiyan: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/baiyan.png",
+        bishi: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/bishi.png",
+        bizui: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/bizui.png",
+        chan: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/chan.png",
+        daku: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/daku.png",
+        dalao: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/dalao.png",
+        dalian: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/dalian.png",
+        dianzan: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/dianzan.png",
+        doge: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/doge.png",
+        facai: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/facai.png",
+        fadai: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/fadai.png",
+        fanu: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/fanu.png",
+    },
+}) 
 </script>
