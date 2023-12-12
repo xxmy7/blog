@@ -1,5 +1,5 @@
 ---
-title: vocabulary_book
+title: 单词本
 date: 2023-12-12 09:54:01
 tags: 
     - 科研
@@ -10,7 +10,7 @@ categories:
 summary: 看不懂的英文单词
 ---
 
-# A
+## A
 
 | 单词       | 释义                            | 例子                    |
 | ---------- | ------------------------------- | ----------------------- |
@@ -18,7 +18,7 @@ summary: 看不懂的英文单词
 |            |                                 |                         |
 |            |                                 |                         |
 
-## <span id="alteration">alteration<span>
+### alteration
 
 1. 
 

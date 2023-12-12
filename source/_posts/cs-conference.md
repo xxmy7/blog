@@ -9,7 +9,7 @@ categories:
 summary: 计算机会议各录用情况
 ---
 
-# ICDE
+## ICDE
 
 IEEE International Conference on Data Engineering (ICDE) 是数据库研究领域历史悠久的国际会议，与SIGMOD、VLDB并称为数据库三大顶级会议（中的老三）。ICDE是CCF A类，Core Conference Ranking A*类会议，H5指数56，Impact Score 8.25。每年的ICDE都会讨论设计，构建，管理和评估高级数据密集型系统和应用的研究问题。它是研究人员，从业人员，开发人员和用户探索尖端思想，交流技术，工具和经验的领先论坛。
 
@@ -60,7 +60,7 @@ ICDE 对于投稿的接收主题如下：
 
 
 
-#  VLDB
+##  VLDB
 
 International Conference on Very Large Data Bases (VLDB) 是数据库研究领域历史悠久的国际会议，与SIGMOD、ICDE并称为数据库三大顶级会议。VLDB是CCF A类，Core Conference Ranking A*类会议，由于改为类似期刊的投稿模式，所以没有对应的H5 Index和Impact score。2010年前，会议的审查工作都是由VLDB基金会单独完成的，而2010 年是第一次与PVLDB 进行合作，并且从2011年开始，会议的审查过程将完全通过 PVLDB来完成。这也从原来的一年一次的投稿变成了一年12次的投稿，为学者们提供了更多的机会和空间。VLDB会议已经成为了数据库管理领域最杰出的研究和发展成果的实时传播场所。
 
