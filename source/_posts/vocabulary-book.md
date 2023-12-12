@@ -20,11 +20,11 @@ summary: 看不懂的英文单词
 
 ### alteration
 
-1. 
+1. xxxx
 
-翻译：
+翻译：xxxxx
 
-来源：
+来源：xxxxx
 
 2. 
 2. 
@@ -32,3 +32,4 @@ summary: 看不懂的英文单词
 
 
 ## B
+
