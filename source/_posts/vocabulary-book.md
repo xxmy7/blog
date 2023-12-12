@@ -22,9 +22,9 @@ summary: 看不懂的英文单词
 
 1. xxxx
 
-- 翻译：xxxxx
+    - 翻译：xxxxx
 
-- 来源：xxxxx
+    - 来源：xxxxx
 
 2. xxxxx
 3. xxx
