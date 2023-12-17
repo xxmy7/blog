@@ -11,7 +11,6 @@ summary: 有哪几种常见的研究思路
 > 作者：一路向北
 > 链接：https://zhuanlan.zhihu.com/p/671458670
 > 来源：知乎
->
 
 
 之后我也一直在思考，其实选题本身也是一个**金字塔**。
@@ -23,3 +22,35 @@ summary: 有哪几种常见的研究思路
 其实大多数人的科研历程也类似一步步地从塔底走向塔尖的过程。
 
 目前我的目标是既要做一些塔中的工作（锦上添花），也要做一些塔底的工作（雪中送炭）。对应前文叶子要有，花也至少要有一朵拿得出手的。当然在做塔底工作的时候也要尽量做“第二个吃螃蟹的人“。因为一个领域卷烂之后刷点很难，做出来也没有什么人引用你的文章，因为这个领域很难再刷上去了。
+
+----
+
+> 作者：Mike Shou
+> 链接：https://zhuanlan.zhihu.com/p/338193330
+> 来源：知乎
+
+我觉得这段经历，对新手很有参考价值，**很多时候光努力不够，方向更重要。新手如何选博士几年的topic，有两个问题值得思考：**
+
+**能不能快速上手？**有几个简单的评判标准：
+
+- state-of-the-art的paper有没有开源的代码？目的是你能迅速复现baseline，熟悉整体pipeline（如怎样预处理，后处理），加深对实现和细节的理解
+- 有没有对这个topic有hands-on经验的师兄，或者community里面approachable的前辈？目的是，当你遇到实现上的细节问题，可以及时咨询和得到反馈
+- 这个topic有没有比赛，或者标准的benchmark？目的是，有大家已经定义好的数据，实验setup，评价标准；这样，你有可以直接比较的baseline，outperform baseline的时候也容易被人认可
+
+**能不能有大的impact？**这里我指的是博士期间的大方向，由一系列单项的工作或者paper构成。单篇paper通常有三种类型：（1）First work：开创了一个topic，比如RCNN于object detection（2）Last work：基本解决了一个topic，比如Faster-RCNN，YoLo于object detection（3）Improve类型，介于First和Last之间的。
+
+Last很难，Improve常见但影响力不够深远，对于新手而言，博士的早期工作，在有能力做出来和有impact之间的trade-off比较好的，估计是First了，不一定非要是第一篇，只要是某个topic里面开创性工作的那一批之一，都是不错的。这个早期工作之后，你会对这个问题哪里要改进，有很清楚的认识，因为improvement room大，也会有很多ideas。同样，早期的时候怎么选这样一个topic呢：相关的比赛是这一两年新开的吗，相关的benchmark是这一两年出来的吗，上面的结果提升空间大吗（现在是20%还是已经80%了）？
+
+**单篇Paper选题**
+
+前面说的PhD选题是大方向上的，具体到每一篇paper，选择的principle和重点则不太一样。来Facebook后从马爷爷那知道了一个著名的**Heilmeier问题系列**，是指导老师们申项目的，我觉得稍微改改，便很适用于我们考虑，某一篇paper的选题，合不合适：
+
+1. **What are you trying to do?** Articulate your objectives using absolutely no jargon.
+2. **How is it done today, and what are the limits of current practice?**
+3. **Who cares?** [Support other’s research? Shape research landscape? Power applications in industry?]
+4. **What's new in your approach** and why do you think it will be successful?
+5. If you're successful, **what difference will it make?** [e.g. Contributions in theory/modeling? Improve accuracy by 5% on dataset A, B, C…?]
+6. **What are the risks and the payoffs?** [Further, how would you mitigate the risks? If your proposed method does not work, what could be alternative design? These can end up as discussions such as ablation studies in your paper.]
+7. **How much will it cost?** [e.g. How many GPUs do your experiments require? How long is each training process? How about data storage?]
+8. **How long will it take?** [How many hours are you going to work on this per week? When is the submission DDL? Can you make it?]
+9. **What are the midterm and final "exams" to check for success?**
