@@ -29,6 +29,8 @@ summary: 有哪几种常见的研究思路
 > 链接：https://zhuanlan.zhihu.com/p/338193330
 > 来源：知乎
 
+**Phd选题**
+
 我觉得这段经历，对新手很有参考价值，**很多时候光努力不够，方向更重要。新手如何选博士几年的topic，有两个问题值得思考：**
 
 **能不能快速上手？**有几个简单的评判标准：
@@ -54,3 +56,4 @@ Last很难，Improve常见但影响力不够深远，对于新手而言，博士
 7. **How much will it cost?** [e.g. How many GPUs do your experiments require? How long is each training process? How about data storage?]
 8. **How long will it take?** [How many hours are you going to work on this per week? When is the submission DDL? Can you make it?]
 9. **What are the midterm and final "exams" to check for success?**
+
