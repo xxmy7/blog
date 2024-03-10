@@ -129,3 +129,20 @@ summary: 看不懂的英文单词
     - 翻译：由于基于单视图的模型无法挖掘多类型城市数据的能力，这一固有缺陷限制了它们的性能。
     - 来源：Multi-View Joint Graph Representation Learning for Urban Region Embedding 的 Introduction
 
+
+
+## S
+
+| 单词    | 释义                                                       | 例子                 |
+| ------- | ---------------------------------------------------------- | -------------------- |
+| synergy | n.（两个或多个组织共同协作后产生的）协同增效作用，协同作用 | [点击跳转](#synergy) |
+|         |                                                            |                      |
+|         |                                                            |                      |
+
+### synergy
+
+- n. 协同作用
+
+1. Compared with previous surveys, we focus more on the **synergy** of deep learning methods with urban computing applications.
+    - 翻译：与以往的调查相比，我们更关注深度学习方法与城市计算应用的协同。
+    - 来源：Deep Learning for Cross-Domain Data Fusion in Urban Computing: Taxonomy, Advances, and Outlook 的 Abstract
