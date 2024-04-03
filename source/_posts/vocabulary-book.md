@@ -12,11 +12,12 @@ summary: 看不懂的英文单词
 
 ## A
 
-| 单词       | 释义                            | 例子                    |
-| ---------- | ------------------------------- | ----------------------- |
-| alteration | n. 改变，变更；（对衣物的）改动 | [点击跳转](#alteration) |
-|            |                                 |                         |
-|            |                                 |                         |
+| 单词       | 释义                                   | 例子                    |
+| ---------- | -------------------------------------- | ----------------------- |
+| alteration | n. 改变，变更；（对衣物的）改动        | [点击跳转](#alteration) |
+| abbreviate | vt.缩写，使省略；使简短  vi.使用缩写词 | [点击跳转](#abbreviate) |
+|            |                                        |                         |
+|            |                                        |                         |
 
 ### alteration
 
@@ -25,11 +26,18 @@ summary: 看不懂的英文单词
     - 翻译：xxxxx
 
     - 来源：xxxxx
-
 2. xxxxx
 3. xxx
 
 
+
+### abbreviate
+
+-   vt. 缩写
+
+1. Inspired by [45], we have implemented task-specific temporary pooling (**abbreviated** as pooler) to customize visual representation for distinct pre-training tasks while sharing the previous backbone encoder.
+    - 翻译：受[45]的启发，我们实现了特定于任务的临时池化（缩写为池化器），为不同的预训练任务定制视觉表示，同时共享以前的骨干编码器。
+    - 来源：UrbanCLIP: Learning Text-Enhanced Urban Region Profiling with Contrastive Language-Image Pretraining from the Web 的 MOTHODOLOGY 3.2
 
 ## B
 
