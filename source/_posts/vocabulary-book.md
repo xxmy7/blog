@@ -10,6 +10,22 @@ categories:
 summary: 看不懂的英文单词
 ---
 
+一些缩写
+
+| 缩写 | 意思                                                     | 例子                                                         | 备注         |
+| ---- | -------------------------------------------------------- | ------------------------------------------------------------ | ------------ |
+| i.e. | abbr.即，也就是（id est）                                | Given a downstream task (e.g., crime count prediction), HREP further attaches a task-specific prefix (**i.e.**, a prompt) to the front of each region embedding, which is fine-tuned (**i.e.**, prompt learning) for the task. | 注意要加逗号 |
+| e.g. | abbr. 例如（for example）                                | Given that there are no external supervision signals (**e.g.**, region class labels), we use the similarity between the regions as computed by their input feature vectors to guide model training. | 注意要加逗号 |
+| cf.  | abbr.（拉丁）比较，查阅【拉丁文 confer (=compare) 之略】 | Using the human mobility feature matrix M (**cf.** Section III). |              |
+
+
+
+
+
+
+
+
+
 ## A
 
 | 单词       | 释义                                   | 例子                    |
