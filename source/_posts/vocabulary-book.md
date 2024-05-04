@@ -73,6 +73,26 @@ summary: 看不懂的英文单词
 
 
 
+## C
+
+| 单词           | 释义                | 例子                    |
+| -------------- | ------------------- | ----------------------- |
+| conventionally | adv. 照惯例，照常套 | [点击跳转](#remarkably) |
+|                |                     |                         |
+|                |                     |                         |
+
+### remarkably
+
+-   adv. 照惯例，照常套
+
+1.  Remarkably, diffusion models have also gained popularity as a non-autoregressive alternative for tasks **conventionally** dominated by autoregressive methods.
+    - 翻译：值得注意的是，扩散模型作为非自回归替代方案在传统上由自回归方法主导的任务上也受到了欢迎。
+    - 来源：A Survey on Diffusion Models for Time Series and Spatio-Temporal Data 的 Introduction
+
+
+
+
+
 ## E
 
 | 单词    | 释义                                                       | 例子                 |
@@ -152,6 +172,25 @@ summary: 看不懂的英文单词
 1. As single-view based models cannot explore the power of multi-type urban data, this **inherent** flaw limits their performance.
     - 翻译：由于基于单视图的模型无法挖掘多类型城市数据的能力，这一固有缺陷限制了它们的性能。
     - 来源：Multi-View Joint Graph Representation Learning for Urban Region Embedding 的 Introduction
+
+
+
+## R
+
+| 单词       | 释义                                    | 例子                    |
+| ---------- | --------------------------------------- | ----------------------- |
+| remarkably | adv. 不寻常地，惊人地；不平常地，奇怪地 | [点击跳转](#remarkably) |
+|            |                                         |                         |
+|            |                                         |                         |
+
+### remarkably
+
+- adv. 值得注意地，不寻常地
+    - 近义词：notably, dramatically, considerably, prominently, markedly
+
+1.  **Remarkably**, diffusion models have also gained popularity as a non-autoregressive alternative for tasks conventionally dominated by autoregressive methods.
+    - 翻译：值得注意的是，扩散模型作为非自回归替代方案在传统上由自回归方法主导的任务上也受到了欢迎。
+    - 来源：A Survey on Diffusion Models for Time Series and Spatio-Temporal Data 的 Introduction
 
 
 
