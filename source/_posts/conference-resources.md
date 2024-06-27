@@ -17,11 +17,11 @@ tutorial：
 
 https://icml.cc/virtual/2023/events/tutorial
 
-<img src="ICML_tutorial.png" alt="image-20240627161547854" style="zoom:80%;" />
+<img src="ICML_tutorial.png" alt="ICML2023的tutorial界面" style="zoom:80%;" />
 
 对应每个点进去有相应的视频
 
-<img src="tutorial.png" alt="image-20240627161616530" style="zoom:67%;" />
+<img src="tutorial.png" alt="每个tutorial界面的内容" style="zoom:67%;" />
 
 ## WWW
 
