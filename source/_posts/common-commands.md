@@ -31,7 +31,7 @@ conda env -h
 conda create --name your_env_name
 ```
 
-创建指定python版本的环境
+##### 创建指定python版本的环境
 
 ```
 conda create --name your_env_name python=2.7
@@ -39,7 +39,25 @@ conda create --name your_env_name python=3
 conda create --name your_env_name python=3.5
 ```
 
-####列举当前所有环境
+##### 根据已有环境名复制生成新的环境
+
+假设已有环境名为A，需要生成的环境名为B：
+
+```
+conda create -n B --clone A
+```
+
+##### 根据已有环境路径复制生成新的环境
+
+假设已有环境路径为D:\A，需要生成的新的环境名为B：
+
+```python
+conda create -n B --clone D:\A
+```
+
+生成的新的环境的位置在anaconda的安装路径下，一般情况在`D:\Anaconda3\envs\`文件夹下。
+
+#### 列举当前所有环境
 
 ```shell
 conda info --envs
