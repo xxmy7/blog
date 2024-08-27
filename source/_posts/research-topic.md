@@ -152,7 +152,7 @@ Last很难，Improve常见但影响力不够深远，对于新手而言，博士
 
 ----
 
-## 5.作为审稿人，你什么情况下会选择拒稿？
+## 5.【Café速递】李圣雨：多源融合时空标定/导航定位与科研经历分享
 
 > 作者：李圣雨
 >
@@ -175,3 +175,21 @@ Last很难，Improve常见但影响力不够深远，对于新手而言，博士
 （2）科研交流，可以积极参加高水平的学术会议研讨，以及相关的同门交流活动，可以取长补短，获得不同视角的建议和帮助。
 
 （3）科研正反馈，漫长而严谨的科研需要适当的正反馈，如论文接收、获得奖学金等，适当的正反馈能够激励研究人员在遇到困难时保持动力和自信心，使研究得以顺利推进。
+
+
+
+----
+
+## 6. 论文的故事线
+
+> 作者：Shu Yang（https://github.com/shuyhere）
+>
+> 来源：小红书发的
+
+可以按照下列的故事线总结论文的核心
+
+1. X (+define X if not obvious) is an important problem 
+2. The core challenges are this and that. 
+3. Previous work on X has addressed these with Y, but the problems with this are Z. 
+4. In this work we do W (?). 
+5. This has the following appealing properties and our experiments E show this and that.
