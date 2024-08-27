@@ -42,3 +42,9 @@ WSDM2023
 全部的视频：
 
 https://www.youtube.com/playlist?list=PLn0nrSd4xjjaL3eKbJfrBuwm97ynTQzLJ
+
+## AAAI
+
+AAAI有自己的论文集，网址：https://ojs.aaai.org/index.php/AAAI/index
+
+在其中可以找到各个track的论文，有的还会有video/poster
