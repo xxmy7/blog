@@ -15,7 +15,7 @@ summary: 计算机会议中各个paper的类型的介绍
 
 > 参考：[计算机国际会议中proceedings,conference,paper,workshop,demo的区别是什么？ - 安安的回答 - 知乎]( https://www.zhihu.com/question/20820000/answer/3177921476)
 
-![](conference-type/1.jpg)
+![](1.jpg)
 
 ### Proceedings
 
