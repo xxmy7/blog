@@ -33,15 +33,15 @@ a：anchor，锚示例；p：positive，与a是同一类别的样本；n：negat
 
 - **easy triplets**： $$ L=0 $$ ，即  $$d(a,p)+margin<d(a,n) $$ ，这种情况不需要优化，天然a和p的距离很近，a和n的距离很远，如下图
 
-![img](triplet-loss\v2-79483ddef7efaf272b1448fe78553648_1440w.webp)
+![img](v2-79483ddef7efaf272b1448fe78553648_1440w.webp)
 
 - **hard triplets**： $$L>margin$$ ，即 $$d(a,n)>d(a,p)$$ ，a和n的距离近，a和p的距离远，这种情况损失最大，需要优化，如下图
 
-![img](triplet-loss\v2-22dddc8d121df5c840cb8878d46662d1_1440w.webp)
+![img](v2-22dddc8d121df5c840cb8878d46662d1_1440w.webp)
 
 - **semi-hard triplets**： $$ L<margin $$ ，即  $$d(a,p)<d(a,n)<d(a,p)+margin $$ ，即a和p的距离比a和n的距离近，但是近的不够多，不满足margin，这种情况存在损失，但损失比hard triplets要小，也需要优化，如下图
 
-![img](triplet-loss\v2-d94bdabb8c369d36a614c441f0397efe_1440w.webp)
+![img](v2-d94bdabb8c369d36a614c441f0397efe_1440w.webp)
 
 ## 为什么要设置margin？
 
@@ -60,3 +60,21 @@ a：anchor，锚示例；p：positive，与a是同一类别的样本；n：negat
 针对搜索引擎场景，比如dssm，正样本是用户query搜索点击的doc做正例，负例是采用随机采样的策略，一般随机采样的策略是不可控的，既可能采样到easy triplet，又可能采样到hard triple，要看采样的池子怎么确定。
 
 Facebook最近提出的EBR也指出，在随机采样的策略上，要增加semi-hard triplets，选取搜索曝光页面第101~500，也就是让模型看到这些模糊的样本，有些相似但没那么相似，这样模型才能更好的学习到样本之间的差异。
+
+## **深度学习框架中的ranking loss层**
+
+### **Caffe**
+
+- Constrastive loss layer
+- pycaffe triplet ranking loss layer
+
+### **PyTorch**
+
+- CosineEmbeddingLoss
+- MarginRankingLoss
+- TripletMarginLoss
+
+### **TensorFlow**
+
+- contrastive_loss
+- triplet_semihard_loss
