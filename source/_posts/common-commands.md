@@ -127,5 +127,99 @@ conda config --show
 
 
 
+## tmux命令
 
+### 基本概念
+
+1. 会话（Session）
+
+    tmux 会话是一个独立的运行环境，可以包含多个窗口。即使断开连接，会话也会继续在后台运行。
+
+2. 窗口（Window）
+
+    每个会话可以包含多个窗口，类似于浏览器中的标签页。
+
+3. 面板（Pane）
+
+    每个窗口可以分割成多个面板，允许同时查看和操作多个终端。
+
+> `tmux 的所有操作都需要先按下前缀键（默认是 Ctrl+b），然后输入命令键。`
+
+### 会话管理
+
+#### 列出所有会话
+
+```bash
+tmux ls
+```
+
+#### 创建名为name的新会话
+
+```bash
+tmux new -s <name>
+```
+
+#### 分离当前会话（会话继续后台运行）
+
+```bash
+Ctrl+b d
+```
+
+#### 重新连接到指定会话
+
+```bash
+tmux attach -t <name>
+```
+
+ #### 重命名当前会话
+
+```bash
+Ctrl+b $
+```
+
+#### 切换会话
+
+```bash
+Ctrl+b s
+```
+
+## linux命令
+
+#### 统计文件的个数
+
+1. 统计当前文件夹下文件的个数，包括子文件夹里的
+
+```bash
+ls -lR|grep "^-"|wc -l
+```
+
+2. 统计文件夹下目录的个数，包括子文件夹里的
+
+```bash
+ls -lR|grep "^d"|wc -l
+```
+
+3.  统计当前文件夹下文件的个数
+
+```bash
+ls -l |grep "^-"|wc -l
+```
+
+4. 统计当前文件夹下目录（文件夹）的个数
+
+```bash
+ls -l |grep "^d"|wc -l
+```
+
+5.  查看当前目录下每个子目录的文件数量
+
+```bash
+find . -maxdepth 1 -type d | while read dir; do count=$(find "$dir" -type f | wc -l); echo "$dir : $count"; done
+```
+
+6. 查看当前文件夹下图片数量
+
+``` bash
+find . -type f | grep -iE '\.(jpg|jpeg|png|gif|bmp)$' | wc -l
+```
 
