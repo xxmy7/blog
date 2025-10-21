@@ -223,6 +223,8 @@ find . -maxdepth 1 -type d | while read dir; do count=$(find "$dir" -type f | wc
 find . -type f | grep -iE '\.(jpg|jpeg|png|gif|bmp)$' | wc -l
 ```
 
+
+
 #### 同步文件夹
 
 > `rsync`介绍：
@@ -255,7 +257,7 @@ find . -type f | grep -iE '\.(jpg|jpeg|png|gif|bmp)$' | wc -l
     
     注意最后是有`/`的
 
-基本用法
+##### 基本用法
 
 1. `-r` 参数
 
