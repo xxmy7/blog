@@ -224,7 +224,7 @@ find . -type f | grep -iE '\.(jpg|jpeg|png|gif|bmp)$' | wc -l
 ```
 
 
-
+ 
 #### 同步文件夹
 
 > `rsync`介绍：
