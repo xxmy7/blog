@@ -223,3 +223,92 @@ find . -maxdepth 1 -type d | while read dir; do count=$(find "$dir" -type f | wc
 find . -type f | grep -iE '\.(jpg|jpeg|png|gif|bmp)$' | wc -l
 ```
 
+#### 同步文件夹
+
+> `rsync`介绍：
+> `sync`同步：刷新文件系统缓存，强制将修改过的数据块写入磁盘，并且更新超级快。一般重启系统前执行`sync`命令
+> `async`：将数据先缓存在缓冲区，再周期性（一般是30s）的去同步到磁盘 。性能好，但是不能保证数据的安全性
+> `rsync`：远程同步，remote synchronous
+
+1. 本地同步：
+
+    ```bash		
+    rsync -a 源目录或文件 目标目录或文件
+    例如：
+    rsync -a /dir1/ /dir2/     #dir1下所有文件同步到dir2下
+    ```
+
+2. 远程同步：
+
+    ```bash
+    # 将192.168.1.77服务器/etc/hosts文件拷贝到本地/dir1文件夹下
+    rsync -av root@192.168.1.77:/etc/hosts /dir1/     
+    ```
+    
+    默认是需要输入密码才能同步，因为rsync基于ssh服务
+    注：免密登录，这只密钥对
+    
+    ```bash
+    # 将dirA的所有文件同步到dirB内，并删除dirB内多余的文件   
+    rsync -av --delete  dirA/ dirB/
+    ```
+    
+    注意最后是有`/`的
+
+基本用法
+
+1. `-r` 参数
+
+本机使用 rsync 命令时，可以作为`cp`和`mv`命令的替代方法，将源目录同步到目标目录。
+
+```bash
+ rsync -r source destination
+```
+
+上面命令中，`-r`表示递归，即包含子目录。注意，`-r`是必须的，否则 rsync 运行不会成功。`source`目录表示源目录，`destination`表示目标目录。
+
+如果有多个文件或目录需要同步，可以写成下面这样。
+
+```bash
+rsync -r source1 source2 destination
+```
+
+上面命令中，`source1`、`source2`都会被同步到`destination`目录。
+
+2. `-a` 参数
+
+`-a`参数可以替代`-r`，除了可以递归同步以外，还可以同步元信息（比如修改时间、权限等）。由于 rsync 默认使用文件大小和修改时间决定文件是否需要更新，所以`-a`比`-r`更有用。下面的用法才是常见的写法。
+
+```bash
+ rsync -a source destination
+```
+
+目标目录`destination`如果不存在，rsync 会自动创建。执行上面的命令后，源目录`source`被完整地复制到了目标目录`destination`下面，即形成了`destination/source`的目录结构。
+
+如果只想同步源目录`source`里面的内容到目标目录`destination`，则需要在源目录后面加上斜杠。
+
+```bash
+rsync -a source/ destination
+```
+
+上面命令执行后，`source`目录里面的内容，就都被复制到了`destination`目录里面，并不会在`destination`下面创建一个`source`子目录。
+
+3. `-n` 参数
+
+如果不确定 rsync 执行后会产生什么结果，可以先用`-n`或`--dry-run`参数模拟执行的结果。
+
+```bash
+rsync -anv source/ destination
+```
+
+上面命令中，`-n`参数模拟命令执行的结果，并不真的执行命令。`-v`参数则是将结果输出到终端，这样就可以看到哪些内容会被同步。
+
+4. `--delete` 参数
+
+默认情况下，`rsync` 只确保源目录的所有内容（明确排除的文件除外）都复制到目标目录。它不会使两个目录保持相同，并且不会删除文件。如果要使得目标目录成为源目录的镜像副本，则必须使用`--delete`参数，这将删除只存在于目标目录、不存在于源目录的文件。
+
+```bash
+rsync -av --delete source/ destination
+```
+
+上面命令中，`--delete`参数会使得`destination`成为`source`的一个镜像。
